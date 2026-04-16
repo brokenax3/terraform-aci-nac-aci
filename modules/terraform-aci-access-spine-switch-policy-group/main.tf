@@ -30,7 +30,7 @@ resource "aci_rest_managed" "infraRsSpinePGrpToCdpIfPol" {
   dn         = "${aci_rest_managed.infraSpineAccNodePGrp.dn}/rsspinePGrpToCdpIfPol"
   class_name = "infraRsSpinePGrpToCdpIfPol"
   content = {
-    tnLldpIfPolName = var.cdp_policy
+    tnCdpIfPolName = var.cdp_policy
   }
 }
 
